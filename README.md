@@ -172,6 +172,8 @@ Você deve ver:
 ## 🖼️ Screenshots
 
 > Sugestão: crie a pasta `docs/screenshots/` e adicione as imagens com os nomes abaixo.
+>
+> Guia de padronização: [`docs/screenshots/GUIA-SCREENSHOTS.md`](docs/screenshots/GUIA-SCREENSHOTS.md)
 
 ### VS Code com o projeto aberto
 
