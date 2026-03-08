@@ -1,6 +1,29 @@
 # AppAula01 - Spring Boot (Back-End)
 
+[![Java](https://img.shields.io/badge/Java-17-007396?logo=openjdk&logoColor=white)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.11-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
+[![Maven](https://img.shields.io/badge/Maven-Wrapper-C71A36?logo=apachemaven&logoColor=white)](https://maven.apache.org/)
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-0A66C2)](#)
+[![Licença](https://img.shields.io/badge/licen%C3%A7a-educacional-lightgrey)](#-licença)
+
 Projeto introdutório de **Desenvolvimento Web Back-End** com **Java + Spring Boot**, criado para demonstrar uma API REST simples no VS Code.
+
+---
+
+## 📚 Sumário
+
+- [📌 Sobre o projeto](#-sobre-o-projeto)
+- [✨ Destaques](#-destaques)
+- [🧰 Tecnologias utilizadas](#-tecnologias-utilizadas)
+- [🗂️ Estrutura do projeto](#-estrutura-do-projeto)
+- [✅ Pré-requisitos](#-pré-requisitos)
+- [🚀 Passo a passo no VS Code](#-passo-a-passo-no-vs-code)
+- [🖼️ Screenshots](#-screenshots)
+- [🧪 Executar testes](#-executar-testes)
+- [🔍 Endpoints úteis](#-endpoints-úteis)
+- [📚 Observações](#-observações)
+- [👨‍🏫 Contexto acadêmico](#-contexto-acadêmico)
+- [📄 Licença](#-licença)
 
 ---
 
@@ -16,6 +39,14 @@ Resposta esperada:
 
 ---
 
+## ✨ Destaques
+
+- API REST simples e ideal para início em Spring Boot.
+- Setup rápido com **Maven Wrapper** (sem precisar instalar Maven globalmente).
+- Guia completo para criar o projeto no VS Code passo a passo.
+
+---
+
 ## 🧰 Tecnologias utilizadas
 
 - **Java 17**
@@ -23,6 +54,27 @@ Resposta esperada:
 - **Maven (Wrapper: `mvnw`/`mvnw.cmd`)**
 - **Spring Web**
 - **Spring Boot Actuator**
+
+---
+
+## 🗂️ Estrutura do projeto
+
+```text
+.
+├── pom.xml
+├── mvnw
+├── mvnw.cmd
+├── src
+│   ├── main
+│   │   ├── java/com/facens/appaula01
+│   │   │   ├── Appaula01Application.java
+│   │   │   └── OlaMundoController.java
+│   │   └── resources
+│   │       └── application.properties
+│   └── test/java/com/facens/appaula01
+│       └── Appaula01ApplicationTests.java
+└── README.md
+```
 
 ---
 
@@ -41,7 +93,7 @@ Antes de começar, instale:
 
 ---
 
-## 🚀 Como criar este projeto no VS Code (passo a passo)
+## 🚀 Passo a passo no VS Code
 
 ### 1) Criar o projeto Spring Boot
 
@@ -61,20 +113,7 @@ Antes de começar, instale:
 6. Escolha a pasta de destino e aguarde a geração.
 7. Abra o projeto no VS Code.
 
----
-
-### 2) Estrutura esperada
-
-Após criar, a estrutura principal ficará semelhante a:
-
-- `pom.xml`
-- `src/main/java/com/facens/appaula01/Appaula01Application.java`
-- `src/main/resources/application.properties`
-- `src/test/java/com/facens/appaula01/Appaula01ApplicationTests.java`
-
----
-
-### 3) Criar o Controller
+### 2) Criar o Controller
 
 Crie o arquivo:
 
@@ -98,9 +137,7 @@ public class OlaMundoController {
 }
 ```
 
----
-
-### 4) Executar o projeto
+### 3) Executar o projeto
 
 No terminal do VS Code, na raiz do projeto:
 
@@ -120,9 +157,7 @@ A aplicação deve subir em:
 
 - `http://localhost:8080`
 
----
-
-### 5) Testar o endpoint
+### 4) Testar o endpoint
 
 Abra no navegador:
 
@@ -131,6 +166,24 @@ Abra no navegador:
 Você deve ver:
 
 `Bem-vindo à disciplina de Desenvolvimento Web Back-End 🚀`
+
+---
+
+## 🖼️ Screenshots
+
+> Sugestão: crie a pasta `docs/screenshots/` e adicione as imagens com os nomes abaixo.
+
+### VS Code com o projeto aberto
+
+![VS Code com estrutura do projeto](docs/screenshots/01-estrutura-projeto.png)
+
+### Aplicação rodando no terminal
+
+![Aplicação Spring Boot em execução](docs/screenshots/02-app-rodando.png)
+
+### Endpoint no navegador
+
+![Resposta do endpoint olaMundo](docs/screenshots/03-endpoint-olaMundo.png)
 
 ---
 
@@ -154,12 +207,12 @@ Para rodar os testes automatizados:
 
 ## 🔍 Endpoints úteis
 
-Além do endpoint principal, como o Actuator está habilitado, você pode consultar:
-
+- `GET /olaMundo`
 - `GET /actuator/health`
 
-Exemplo:
+Exemplos:
 
+- `http://localhost:8080/olaMundo`
 - `http://localhost:8080/actuator/health`
 
 ---
@@ -179,7 +232,7 @@ server.port=8081
 
 Projeto base para a disciplina de **Desenvolvimento Web Back-End**.
 
-Se quiser, você pode evoluir este projeto com:
+Possíveis evoluções:
 
 - novos endpoints (`POST`, `PUT`, `DELETE`)
 - integração com banco de dados
